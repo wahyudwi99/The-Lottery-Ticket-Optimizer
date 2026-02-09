@@ -1,0 +1,55 @@
+lottery-ticket-optimizer/
+│
+├── README.md
+│
+├── configs/
+│   ├── mnist_mlp.yaml
+│   ├── cifar_cnn.yaml
+│
+├── experiments/
+│   ├── run_dense.py
+│   ├── run_sparse_rewind.py
+│   ├── run_sparse_random_init.py
+│
+├── lth/
+│   ├── __init__.py
+│
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── mlp.py
+│   │   └── cnn.py
+│
+│   ├── pruning/
+│   │   ├── __init__.py
+│   │   ├── magnitude.py
+│   │   └── mask_utils.py
+│
+│   ├── optim/
+│   │   ├── __init__.py
+│   │   ├── rewind.py
+│   │   └── state_utils.py
+│
+│   ├── training/
+│   │   ├── __init__.py
+│   │   ├── train.py
+│   │   ├── eval.py
+│   │   └── hooks.py
+│
+│   ├── utils/
+│   │   ├── seed.py
+│   │   ├── logging.py
+│   │   └── metrics.py
+│
+├── scripts/
+│   ├── sweep_sparsity.sh
+│   └── plot_results.py
+│
+├── results/
+│   ├── logs/
+│   └── plots/
+│
+├── tests/
+│   ├── test_pruning.py
+│   └── test_rewind.py
+│
+└── requirements.txt
